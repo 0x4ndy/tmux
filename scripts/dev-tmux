@@ -1,0 +1,7 @@
+tmux new-session \; \
+  split-window -p 45 -h \; \
+  send-keys 'cd ~/dev' C-m \; \
+  split-window -p 25 -v \; \
+  send-keys 'cd ~/dev' C-m \; \
+  select-pane -t 0 \; \
+  send-keys 'cd ~/dev' C-m \;
